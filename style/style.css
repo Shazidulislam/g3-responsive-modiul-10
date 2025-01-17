@@ -20,8 +20,8 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    width: 110rem;
-    max-width: 100%;
+    /* width: 110rem;
+    max-width: 100%; */
     margin: auto;
     box-shadow: .1rem .1rem .1rem #4c4c4c , -.1rem 0rem .1rem #4c4c4c;
 }
@@ -54,8 +54,8 @@ main > section{
     cursor: pointer;
 }
 .section__title{
-    font-size: 3rem;
-    font-weight: 700;
+    font-size: 5rem;
+    font-weight: 900;
     color: #131313;
 }
 /* dark -02 */
@@ -171,6 +171,34 @@ main > section{
 .fact__container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+}
+.fact__content{
+    border: 2px solid #FF900E;
+    height: 240px;
+    width: 240px;
+    border-radius: 8px;
+    margin: 6rem 3.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+.fact__description{
+    width: 450px;
+    font-size: larger;
+    margin: 1rem 0;
+}
+.fact__number{
+    font-weight: 700;
+    font-size: 3rem;
+    color: #424242;
+
+}
+.fact__name{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #727272;
 }
 /* responsive media query style start here */
 
