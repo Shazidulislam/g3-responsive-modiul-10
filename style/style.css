@@ -168,16 +168,19 @@ main > section{
     width: 100%;
 }
 /* some fact style start here */
+
 .fact__container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    align-items: center;
 }
 .fact__content{
     border: 2px solid #FF900E;
     height: 240px;
     width: 240px;
     border-radius: 8px;
-    margin: 6rem 3.8rem;
+    margin: 3rem 3.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -199,6 +202,33 @@ main > section{
     font-size: 1.25rem;
     font-weight: 700;
     color: #727272;
+}
+/* sponsors section style start here */
+.our-sponsors{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    justify-content: space-around;
+}
+.section__info{
+    /* width: 400px; */
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sponsors__description{
+    margin-top: 1.5rem;
+    width: 70%;
+}
+.sponsors__companies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5.5rem;
+
 }
 /* responsive media query style start here */
 
@@ -224,9 +254,22 @@ main > section{
    .team__img-container{
        grid-template-columns: repeat(1,1fr);
 
-}
-    
-       
+    }
+    .fact__container{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    .fact__description{
+        width: 90%;
+    }
+    .sponsors__description{
+        /* width: 70%; */
+        text-align: center;
+    }
+    .sponsors__companies{
+        flex-direction: column;
+    }
 }
 /* media responsive  */
 @media screen and (min-width:577px) and (max-width:992px) {
@@ -235,6 +278,15 @@ main > section{
     }
     .teams-section{
         flex-direction: column;
+    }
+    .fact__container{
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    .sponsors__companies{
+        flex-wrap: wrap;
+        /* flex-direction: column; */
     }
     
 }
